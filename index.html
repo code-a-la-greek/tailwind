@@ -15,15 +15,17 @@
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="print"
     onload="this.media='all'">
   <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
 
-<body>
-  <header>
-    <h1>I am David Folley</h1>
+<body class="bg-pink-400">
+  <header class="text-slate-50 grid place-items-center gap-2 py-4 lg:py-12">
+    <h1 class="text-4xl font-bold ">I am David Folley</h1>
     <p>Web designer</p>
     <a href="#skiptomain" aria-label="Skip to main content"></a>
     <nav>
-      <ul>
+      <ul class="flex gap-6">
         <li>
           <a href="https://facebook.com" target="_blank" aria-label="link to social platform Facebook">
             <i aria-hidden="true" class="fa-brands fa-facebook"></i>
@@ -49,53 +51,53 @@
     </nav>
   </header>
   <main id="skiptomain">
-    <section class="about">
-      <h2>About me</h2>
+    <section class="about grid gap-4 lg:grid-cols-2 lg:items-center max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="font-bold block text-2xl ">About me</h2>
       <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-01.jpg" alt="profile photo"
-        width="300">
+        width="300" class="w-full lg:row-[1/4]">
       <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, unde fuga veniam, provident suscipit a harum,
         eum inventore vel minima culpa numquam deleniti possimus dolor quos maxime repellendus! Nobis, vero? </p>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic placeat sint similique dignissimos, eius ducimus
         adipisci quam autem ea, vel eligendi ipsa nihil facilis voluptate earum vitae deleniti ipsum consequatur. </p>
     </section>
-    <section class="projects">
-      <h2>Projects</h2>
+    <section class="projects grid grid-cols-3 gap-4 max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="col-span-full font-bold block text-2xl">Projects</h2>
       <figure>
         <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-02.jpg" width="300"
           alt="screenshot from amelia app">
-        <p>Amelia App</p>
+        <p class="font-bold">Amelia App</p>
         <figcaption>June 2017</figcaption>
       </figure>
       <figure>
         <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-03.jpg" width="300"
           alt="screenshot from Portland project">
-        <p>Portland</p>
+        <p class="font-bold">Portland</p>
         <figcaption>March 2017</figcaption>
       </figure>
       <figure>
         <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-04.jpg" width="300"
           alt="screenshot from Denz for Nilon">
-        <p>Denz for Nilon</p>
+        <p class="font-bold">Denz for Nilon</p>
         <figcaption>Jan 2017</figcaption>
       </figure>
     </section>
-    <section>
-      <h2>Work</h2>
+    <section class="max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="font-bold block text-2xl">Work</h2>
       <article>
-        <p>2017-2015</p>
+        <p class="pt-4">2017-2015</p>
         <b>Web developr - Orson.io</b>
-        <p class="full-length"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque suscipit
+        <p class="max-w-full"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque suscipit
           adipisci inventore magnam harum quo rem quibusdam incidunt illo aut dicta, vitae recusandae ratione earum
           dolore laborum perspiciatis impedit. </p>
       </article>
       <article>
-        <p>2017-2015</p>
+        <p class="pt-4">2017-2015</p>
         <b>Web developr - Mashup template</b>
-        <p class="full-length">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="max-w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </article>
     </section>
-    <section class="education">
-      <h2>Education</h2>
+    <section class="education grid grid-cols-3 max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="col-span-full font-bold block text-2xl">Education</h2>
       <article>
         <p>2017-2015</p>
         <b>Design Master</b>
@@ -112,60 +114,60 @@
         <p>Pascal's Lee Studio</p>
       </article>
     </section>
-    <section>
-      <h2>Language</h2>
-      <div class="language">
+    <section class="max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="font-bold block text-2xl">Language</h2>
+      <div class="language grid grid-cols-3 pt-5">
         <p><b>English</b> Bilingual</p>
         <p><b>French</b> Fluent</p>
         <p><b>Russian</b> Beginner</p>
       </div>
     </section>
-    <section>
-      <h2>Projects</h2>
-      <div class="carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
+    <section class="max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="font-bold block text-2xl">Projects</h2>
+      <div class="carousel pt-8" data-flickity='{ "cellAlign": "center", "contain": true }'>
         <figure>
-          <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-05.jpg" width="300"
+          <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-05.jpg" width="300" class="w-full"
             alt="a child in the woods">
           <p>Jules for Bastion</p>
           <figcaption>2017</figcaption>
         </figure>
         <figure>
-          <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-06.jpg" width="300"
+          <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-06.jpg" width="300" class="w-full"
             alt="children in the woods">
           <p>Kids in Woods</p>
           <figcaption>2016</figcaption>
         </figure>
         <figure>
-          <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-08.jpg" width="300"
+          <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/img-08.jpg" width="300" class="w-full"
             alt="a little girl touching a glass wall">
           <p>Girl and the Glass</p>
           <figcaption>2015</figcaption>
         </figure>
       </div>
     </section>
-    <section>
-      <h2>Social Network</h2>
-      <div class="social">
-        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i>@David_Folley</a>
-        <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>David Folley</a>
-        <a href="https://dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i>David Folley</a>
+    <section class="max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="font-bold block text-2xl">Social Network</h2>
+      <div class="social flex flex-wrap gap-12">
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands border mr-2.5 p-2 border-solid rounded-full border-black fa-twitter"></i>@David_Folley</a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fa-brands border mr-2.5 p-2 border-solid rounded-full border-black fa-linkedin"></i>David Folley</a>
+        <a href="https://dribbble.com" target="_blank"><i class="fa-brands border mr-2.5 p-2 border-solid rounded-full border-black fa-dribbble"></i>David Folley</a>
       </div>
     </section>
-    <section>
-      <h2>Contact</h2>
-      <form>
-        <input type="email" placeholder="Email" name="email" id="email" aria-label="Type your email">
-        <input type="text" name="subject" placeholder="Subject" id="subject" aria-label="Type a subject">
-        <textarea name="message" placeholder="Enter your message" id="message" cols="30" rows="10"
+    <section class="max-w-screen-lg mx-auto my-8 p-8 bg-slate-50">
+      <h2 class="font-bold block text-2xl">Contact</h2>
+      <form class="flex flex-col gap-4 ">
+        <input type="email" placeholder="Email" name="email" id="email" aria-label="Type your email" class="p-4 rounded bg-gray-200">
+        <input type="text" name="subject" placeholder="Subject" id="subject" aria-label="Type a subject" class="p-4 rounded bg-gray-200">
+        <textarea name="message" placeholder="Enter your message" id="message" cols="30" rows="10" class="p-4 rounded bg-gray-200"
           aria-label="Type your message"></textarea>
-        <input type="submit" value="Send your message" aria-label="Send your message">
+        <input type="submit" value="Send your message" aria-label="Send your message" class="bg-pink-400 w-fit p-2 rounded">
       </form>
     </section>
   </main>
-  <footer>
-    <img src="./assets/images/logo.svg" width="100" alt="logo">
+  <footer class="grid place-items-center gap-2 font-bold">
+    <img src="https://code-a-la-greek.github.io/about-html/build-site/assets/images/logo.svg" width="100" alt="logo" class="w-10">
     <small>All rights reserved. Design Masup Template/Unsplash</small>
-    <ul>
+    <ul class="flex gap-6">
       <li>
         <a href="https://facebook.com" target="_blank" aria-label="link to facebook">
           <i class="fa-brands fa-facebook" aria-hidden="true"></i>
